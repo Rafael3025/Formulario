@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./skyle.css">
+</head>
+<body>
+    <div class="container">
+           <!-- Header= Cabecalho -->
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">
+                Pesquisa Sobre Futebol
+                <p class="cabechalo__texto">
+                    Obrigado por participar
+                </p>
+            </h1>
+        </header>
+           <!-- Header= Cabecalho -->
+           <!-- Incio do Formulario -->
+            <form class="formulario">
+
+                <div class="formulario__grupo">
+                    
+                    <label class="nome" for="nome">
+                        Nome
+                    </label>
+
+                        <input type="text"
+                        name=""
+                        id=""
+                        class="formulario__controle"
+                        placeholder="Digite seu nome"
+                        required>
+                </div>   
+
+                <div class="formulario__grupo">
+                        
+                    <label class="email" for="email">
+                        Email </label>
+
+                     <input type="text"
+                    name="email" 
+                    id="email"
+                     class="formulario__controle"
+                     placeholder="Digite seu Email"
+                    required>
+                </div>  
+
+                <div class="formulario__grupo">
+                     <label class="idade" for="numero">
+                        Idade
+                        <span class="dica">
+                        (Opcional)
+                        </span>
+                     </label>
+                        <input type="number" name="idade"
+                        id="number"
+                        min="10"
+                        max="70"
+                        class="formulario__controle"
+                        placeholder="Idade">  
+                </div>
+
+                <div class="formulario__grupo">
+                     <span>Genero(Opcional)</span>
+                     <br>
+                     <input type="radio"
+                         name="text">
+
+                        <label for="sexo">
+                            Masculino
+                        </label>
+                        <br>
+
+                    <input type="radio"
+                        name="text">
+
+                        <label for="sexo">
+                              Feminino
+                        </label>
+                         <br>             
+                 </div checked>
+
+
+                <div class="formulario__grupo">
+                    <p>
+                        Em qual posição você joga?
+                    </p>
+                          <select class="formulario__controle" name="posicao" id="posicao" required>
+                              <option disabled selected value> </option>
+                                            <option value="Zagueiro">Zagueiro</option>
+                                            <option value="Lateral Direita">Lateral Direita</option>
+                                            <option value="Lateral Esquerda">Lateral Esquerda</option>
+                                            <option value="Meio Campo">Meio Campo</option>
+                                            <option value="Ponta Direita">Ponta Direita</option>
+                                            <option value="Ponta Esquerda">Ponta Esquerda</option>
+                                            <option value="Atacante">Atacante</option>
+                            </select>                                                 
+                </div>
+
+
+                <div class="formulario__grupo">
+                    <p> Você se considera um jogador? </p>
+                    <label>
+                        <input type="radio" 
+                        name="auto__avaliacao"
+                        value="bom"
+                         class="input-radio"
+                         checked>
+                         Bom
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" 
+                        name="auto__avaliacao"
+                        value="mediano"
+                         class="input-radio"
+                         checked>
+                        Mediano
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" 
+                        name="auto__avaliacao"
+                        value="mediano"
+                         class="input-radio"
+                         checked>
+                         Ruizinho
+                    </label>
+
+
+
+
+
+
+                </div>
+
+                   <!-- Fim do Formulario --> 
+            </form>
+
+            
+    </div>
+     
+</body>
+</html>
