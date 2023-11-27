@@ -6,6 +6,7 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="./skyle.css">
 </head>
+<!-- Corpo -->
 <body>
     <div class="container">
            <!-- Header= Cabecalho -->
@@ -108,7 +109,7 @@
                         name="auto__avaliacao"
                         value="bom"
                          class="input-radio"
-                         checked>
+                         >
                          Bom
                     </label>
                     <br>
@@ -117,7 +118,7 @@
                         name="auto__avaliacao"
                         value="mediano"
                          class="input-radio"
-                         checked>
+                         >
                         Mediano
                     </label>
                     <br>
@@ -126,22 +127,50 @@
                         name="auto__avaliacao"
                         value="mediano"
                          class="input-radio"
-                         checked>
+                         >
                          Ruizinho
                     </label>
-
-
-
-
-
-
+                </div checked>
+                <!-- Nome do jogador favorito -->
+                <div class="formulario__grupo">
+                    <p>Qual nome do seu jogador favorito?</p>
+                    <input class="formulario__controle" type="text"
+                    required>
                 </div>
 
-                   <!-- Fim do Formulario --> 
-            </form>
+                <div class="formulario__grupo">
+                    <p>Aonde  você prefere jogar bola?</p>
+                    <label>
+                        <input type="radio" name="Campo" id="campo">
+                        Campo
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="Campo" id="campo">
+                      Quadra
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="Campo" id="campo">
+                        Socity
+                    </label>
+                        <!-- descrevendo oque sente -->
+                    <div class="formulario__grupo">
+                        <p>Descreva oque sente, quando joga bola..</p>
+                        <textarea name="texto1" id="texto1" cols="30" rows="10"></textarea>
+                    </div>
 
-            
+                    <div class="formulario__grupo">
+                        <button type="submit" id="submit" class="submit-button">
+                            Enviar
+                        </button>
+                    </div>        
+
+                </div>
+                   <!-- Fim do Formulario --> 
+            </form>          
     </div>
-     
+   
 </body>
+<!-- Corpo -->
 </html>
